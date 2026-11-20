@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>prabhatdigitalmarketing | Prabhat Kumar Singh — Sales &amp; Marketing Consultant</title>
+  <meta name="description" content="prabhatdigitalmarketing — Prabhat Kumar Singh, Sales & Digital Marketing Consultant and Performance Marketer with 12+ years of experience and MBA/PGDM. Based in Noida / Delhi NCR, available for global freelance projects." />
+
+  <!-- Google Fonts: Plus Jakarta Sans (Display) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Typography & Theme Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            navy: '#0F172A',
+            offwhite: '#F8FAFC',
+            royal: '#2563EB',
+            amberAccent: '#F59E0B',
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-offwhite text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white overflow-x-hidden">
+
+  <!-- ===================================================================== -->
+  <!-- 1. STICKY NAVIGATION BAR                                              -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-navy/95 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Brand Logo / Name -->
+        <a href="#top" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-display font-extrabold text-sm tracking-tight shadow-lg shadow-blue-600/20 group-hover:scale-105 transition-transform">
+            PKS
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-white text-base sm:text-lg tracking-tight leading-tight">
+              prabhatdigitalmarketing
+            </span>
+            <span class="text-[11px] font-medium text-slate-400 tracking-wide uppercase hidden sm:block">
+              Prabhat Kumar Singh &bull; Sales &amp; Marketing
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8" aria-label="Primary Navigation">
+          <a href="#experience" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Experience</a>
+          <a href="#expertise" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Expertise</a>
+          <a href="#process" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Process</a>
+          <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Contact</a>
+        </nav>
+
+        <!-- Desktop CTA & Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 transition-all duration-200 hover:-translate-y-0.5">
+            Start a Project
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu"
+            class="md:hidden inline-flex items-center justify-center p-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+          >
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Collapsible Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-3 pb-5 space-y-2">
+      <a href="#experience" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Experience</a>
+      <a href="#expertise" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Expertise</a>
+      <a href="#process" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Process</a>
+      <a href="#contact" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Contact</a>
+      <div class="pt-2">
+        <a href="#contact" class="mobile-nav-link w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-base font-bold shadow-lg transition-colors">
+          Start a Project
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================================================================== -->
+    <!-- 2. HERO SECTION                                                       -->
+    <!-- ===================================================================== -->
+    <section class="relative bg-navy text-white overflow-hidden pt-14 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32">
+      <!-- Subtle Executive Background Glows -->
+      <div class="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-600/20 blur-3xl"></div>
+      <div class="pointer-events-none absolute bottom-0 -left-24 w-80 h-80 rounded-full bg-amber-500/10 blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <!-- Eyebrow Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm font-medium text-slate-200 mb-7 shadow-sm">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
+            </span>
+            <span>12+ Years in Sales &amp; Marketing &bull; MBA / PGDM &bull; Available for Freelance</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[1.12] mb-6">
+            Scaling Revenue Through
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-amber-300">
+              Performance Marketing, CRM Automation &amp; Sales Strategy
+            </span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-10">
+            I’m <strong class="text-white font-semibold">Prabhat Kumar Singh</strong>, a results-driven Sales Consultant and Performance Marketer helping businesses, academies, and growing brands turn ad spend and manual pipelines into predictable, automated revenue systems.
+          </p>
+
+          <!-- Primary & Secondary CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-display font-bold text-base shadow-xl shadow-amber-500/20 hover:shadow-amber-400/30 transition-all duration-200 hover:-translate-y-0.5">
+              Send Freelance Enquiry
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+            <a href="#expertise" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-white font-semibold text-base transition-all duration-200">
+              View Areas of Expertise
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Highlights / Metrics Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 max-w-6xl mx-auto">
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/70 p-5 sm:p-6 backdrop-blur-sm hover:border-blue-500/50 transition-colors">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              <p class="font-display font-extrabold text-2xl sm:text-3xl text-white">12+ Years</p>
+            </div>
+            <p class="text-sm text-slate-300 font-medium">Sales &amp; Marketing Leadership</p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/70 p-5 sm:p-6 backdrop-blur-sm hover:border-blue-500/50 transition-colors">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+              <p class="font-display font-extrabold text-2xl sm:text-3xl text-white">Full-Funnel</p>
+            </div>
+            <p class="text-sm text-slate-300 font-medium">Google Ads, Meta Ads &amp; CRM</p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/70 p-5 sm:p-6 backdrop-blur-sm hover:border-blue-500/50 transition-colors">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <p class="font-display font-extrabold text-2xl sm:text-3xl text-white">Data-Driven</p>
+            </div>
+            <p class="text-sm text-slate-300 font-medium">KPI &amp; Lead-Scoring Systems</p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/70 p-5 sm:p-6 backdrop-blur-sm hover:border-blue-500/50 transition-colors">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+              <p class="font-display font-extrabold text-2xl sm:text-3xl text-white">Delhi NCR &amp; Remote</p>
+            </div>
+            <p class="text-sm text-slate-300 font-medium">Global Consulting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 3. AREAS OF EXPERTISE SECTION                                         -->
+    <!-- ===================================================================== -->
+    <section id="expertise" class="py-20 sm:py-28 bg-offwhite">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <span class="inline-block px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+            Areas of Expertise
+          </span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            End-to-End Growth Capabilities Built for Measurable ROI
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Bridging the gap between high-intent digital acquisition and structured sales execution so every marketing rupee works harder.
+          </p>
+        </div>
+
+        <!-- 6 Expertise Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Card 1: Performance Marketing -->
+          <article class="group bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Performance Marketing</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              ROI-focused Google Ads and Meta Ads (Facebook &amp; Instagram) campaigns built for qualified lead generation and conversions.
+            </p>
+          </article>
+
+          <!-- Card 2: CRM Automation & Lead Scoring -->
+          <article class="group bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-3">CRM Automation &amp; Lead Scoring</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              End-to-end CRM setup, automated lead qualification workflows, and scoring systems so sales teams focus on high-intent prospects.
+            </p>
+          </article>
+
+          <!-- Card 3: Sales Process Digitization & KPIs -->
+          <article class="group bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Sales Process Digitization &amp; KPIs</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Transforming manual sales operations into structured pipelines with clear team KPIs, follow-up cadences, and conversion tracking.
+            </p>
+          </article>
+
+          <!-- Card 4: Admissions & EdTech Growth -->
+          <article class="group bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Admissions &amp; EdTech Growth</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Proven student recruitment and admissions strategies for specialized academies, training institutes, and finance/career programs.
+            </p>
+          </article>
+
+          <!-- Card 5: Multi-Channel Campaign Strategy -->
+          <article class="group bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Multi-Channel Campaign Strategy</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Integrated targeting workflows, promotional reels, landing page optimization, and audience segmentation.
+            </p>
+          </article>
+
+          <!-- Card 6: Freelance Growth Consulting -->
+          <article class="group bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mb-6 group-hover:bg-slate-900 group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Freelance Growth Consulting</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Fractional Head of Sales &amp; Marketing support, campaign audits, and go-to-market execution for growing businesses.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 4. SALES & MARKETING EXPERIENCE SECTION                               -->
+    <!-- ===================================================================== -->
+    <section id="experience" class="py-20 sm:py-28 bg-white border-y border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14 sm:mb-16">
+          <span class="inline-block px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/80 text-amber-700 text-xs font-bold uppercase tracking-wider mb-4">
+            Leadership &amp; Track Record
+          </span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            12+ Years of Sales &amp; Marketing Experience
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            A hands-on career spanning revenue leadership, digital demand generation, CRM transformation, and high-growth admissions funnels.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <!-- Executive Timeline (Left 8 Columns) -->
+          <div class="lg:col-span-8 space-y-6 relative">
+            <!-- Vertical connector line on larger screens -->
+            <div class="hidden sm:block absolute left-6 top-8 bottom-8 w-0.5 bg-slate-200" aria-hidden="true"></div>
+
+            <!-- Role 1 -->
+            <div class="relative sm:pl-16">
+              <div class="hidden sm:flex absolute left-3 top-7 w-6 h-6 rounded-full bg-blue-600 ring-4 ring-blue-100 items-center justify-center">
+                <span class="w-2 h-2 rounded-full bg-white"></span>
+              </div>
+              <div class="bg-offwhite rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-blue-300 transition-colors">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">
+                    Consulting &amp; Advisory
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Remote &amp; Delhi NCR</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-slate-900 mb-2">
+                  Independent Sales &amp; Digital Marketing Consultant (prabhatdigitalmarketing)
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                  Advising businesses, startups, and education brands on paid acquisition (Google &amp; Meta Ads), automated CRM workflows, lead qualification pipelines, and end-to-end revenue growth.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Paid Acquisition</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">CRM Workflows</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Revenue Strategy</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="relative sm:pl-16">
+              <div class="hidden sm:flex absolute left-3 top-7 w-6 h-6 rounded-full bg-slate-900 ring-4 ring-slate-200 items-center justify-center">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              </div>
+              <div class="bg-offwhite rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-blue-300 transition-colors">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-800">
+                    NextGen iQ Academy
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">EdTech &amp; Finance Programs</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-slate-900 mb-2">
+                  Marketing &amp; Admissions Strategy Lead
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                  Leading multi-channel marketing campaigns, promotional reels, and targeted student recruitment workflows for MBA/PGDM Finance programs focused on Australian accounting, taxation, and KPO career readiness.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Student Recruitment</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Promotional Reels</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">MBA/PGDM Finance</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 3 -->
+            <div class="relative sm:pl-16">
+              <div class="hidden sm:flex absolute left-3 top-7 w-6 h-6 rounded-full bg-slate-900 ring-4 ring-slate-200 items-center justify-center">
+                <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+              </div>
+              <div class="bg-offwhite rounded-2xl p-6 sm:p-7 border border-slate-200/90 hover:border-blue-300 transition-colors">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-800">
+                    Italian Coffee Cafe &amp; Academy
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Delhi NCR</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-slate-900 mb-2">
+                  Head of Sales &amp; Marketing
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                  Digitized manual sales processes, implemented CRM lead-scoring automation, established clear sales team KPIs, and drove consistent student admissions and digital lead generation across Delhi NCR.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Sales Digitization</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Lead Scoring</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">Sales Team KPIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Credentials Sidebar Callout (Right 4 Columns) -->
+          <aside class="lg:col-span-4 space-y-6">
+            <div class="rounded-2xl bg-navy text-white p-7 sm:p-8 shadow-xl relative overflow-hidden">
+              <div class="pointer-events-none absolute -top-12 -right-12 w-36 h-36 rounded-full bg-blue-600/30 blur-2xl"></div>
+              <div class="relative">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-400/30 text-amber-400 flex items-center justify-center mb-5">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342" />
+                  </svg>
+                </div>
+                <p class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">Education &amp; Credentials</p>
+                <h3 class="font-display font-bold text-2xl text-white mb-3">MBA / PGDM</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                  Backed by formal postgraduate management training and <strong class="text-white">12+ years of cross-functional sales and marketing leadership</strong> across high-conversion B2C, academy, and service verticals.
+                </p>
+
+                <div class="border-t border-slate-700/80 pt-5 space-y-3">
+                  <div class="flex items-center gap-3 text-sm text-slate-200">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span>Google Ads &amp; Meta Ads Specialist</span>
+                  </div>
+                  <div class="flex items-center gap-3 text-sm text-slate-200">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span>CRM Architecture &amp; Lead Scoring</span>
+                  </div>
+                  <div class="flex items-center gap-3 text-sm text-slate-200">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span>Sales Team Enablement &amp; KPIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Consult Card -->
+            <div class="rounded-2xl bg-blue-50 border border-blue-100 p-6">
+              <p class="font-display font-bold text-slate-900 text-base mb-2">Need a Funnel or Ad Account Audit?</p>
+              <p class="text-sm text-slate-600 mb-4">
+                Let’s identify where qualified leads are dropping off and build a repeatable system to fix it.
+              </p>
+              <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-blue-700 hover:text-blue-800 transition-colors">
+                Request a Freelance Proposal
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 5. HOW WE WORK TOGETHER (3-STEP FREELANCE PROCESS)                    -->
+    <!-- ===================================================================== -->
+    <section id="process" class="py-20 sm:py-28 bg-navy text-white relative overflow-hidden">
+      <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[36rem] h-[36rem] rounded-full bg-blue-600/10 blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-amber-400 text-xs font-bold uppercase tracking-wider mb-4">
+            How We Work Together
+          </span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-4">
+            A Structured 3-Step Freelance Consulting Process
+          </h2>
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+            No guesswork or vanity metrics—just a clear roadmap from initial audit to predictable, scalable revenue.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Step 01 -->
+          <div class="rounded-2xl bg-slate-800/70 border border-slate-700/80 p-7 sm:p-8 hover:border-blue-500/60 transition-all duration-300">
+            <div class="flex items-center justify-between mb-6">
+              <span class="font-display font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-sky-300">01</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900/80 text-xs font-semibold text-slate-300 border border-slate-700">Week 1</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Discovery &amp; Audit</h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Deep-dive review of your current ad accounts, sales funnel, CRM setup, and conversion gaps to uncover immediate quick wins and wasted spend.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="rounded-2xl bg-slate-800/70 border border-slate-700/80 p-7 sm:p-8 hover:border-amber-500/60 transition-all duration-300">
+            <div class="flex items-center justify-between mb-6">
+              <span class="font-display font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-br from-amber-400 to-orange-300">02</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900/80 text-xs font-semibold text-slate-300 border border-slate-700">Weeks 2–3</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Strategy &amp; System Build</h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Launch targeted Google &amp; Meta Ads campaigns, implement CRM lead-scoring automation, and establish clear team KPIs and follow-up cadences.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="rounded-2xl bg-slate-800/70 border border-slate-700/80 p-7 sm:p-8 hover:border-emerald-500/60 transition-all duration-300">
+            <div class="flex items-center justify-between mb-6">
+              <span class="font-display font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-teal-300">03</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900/80 text-xs font-semibold text-slate-300 border border-slate-700">Ongoing</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Scale &amp; Optimize</h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Continuous performance tracking, creative and audience testing, lead quality refinement, and budget scaling focused purely on net ROI growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 6. FREELANCE WORK ENQUIRY SECTION (CTA & INTERACTIVE FORM)            -->
+    <!-- ===================================================================== -->
+    <section id="contact" class="py-20 sm:py-28 bg-offwhite">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+          <!-- Left Column: Compelling CTA Copy & Expectations -->
+          <div class="lg:col-span-5 space-y-8">
+            <div>
+              <span class="inline-block px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+                Freelance Work Enquiry
+              </span>
+              <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+                Ready to Scale Your Leads &amp; Sales?
+              </h2>
+              <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                Share your goals and current bottlenecks using the enquiry form. Whether you need high-ROI paid campaigns, CRM automation, or fractional sales leadership, I’ll help you build a predictable growth engine.
+              </p>
+            </div>
+
+            <!-- What Clients Can Expect -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+              <h3 class="font-display font-bold text-base text-slate-900">What you can expect:</h3>
+              <ul class="space-y-3.5">
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-slate-700"><strong class="text-slate-900">24-Hour Response:</strong> Direct reply from Prabhat Kumar Singh within one business day.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-slate-700"><strong class="text-slate-900">Tailored Action Plan:</strong> Specific recommendations aligned to your industry, audience, and budget.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-slate-700"><strong class="text-slate-900">Transparent Freelance Engagement:</strong> Clear deliverables, KPIs, and flexible project or retainer models.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Location & Availability Badge -->
+            <div class="inline-flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-slate-900 text-white shadow-md">
+              <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-amber-400 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-amber-400">Location &amp; Availability</p>
+                <p class="text-sm font-medium text-slate-100">Noida, Delhi NCR &mdash; Working with Clients Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Freelance Work Enquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-6 sm:p-9 border border-slate-200/90 shadow-xl shadow-slate-200/50">
+
+              <!-- Form Container -->
+              <div id="enquiry-form-wrapper">
+                <div class="mb-7">
+                  <h3 class="font-display font-bold text-2xl text-slate-900">Send a Project Enquiry</h3>
+                  <p class="text-sm text-slate-500 mt-1">Fields marked with <span class="text-red-500 font-semibold">*</span> are required.</p>
+                </div>
+
+                <form id="freelance-enquiry-form" novalidate class="space-y-5">
+                  <!-- Row 1: Full Name & Email -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label for="fullName" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                        Full Name <span class="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        required
+                        placeholder="e.g., Rahul Sharma"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      />
+                      <p id="error-fullName" class="hidden mt-1.5 text-xs font-medium text-red-600"></p>
+                    </div>
+
+                    <div>
+                      <label for="email" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                        Email Address <span class="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="you@company.com"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      />
+                      <p id="error-email" class="hidden mt-1.5 text-xs font-medium text-red-600"></p>
+                    </div>
+                  </div>
+
+                  <!-- Row 2: Phone / WhatsApp & Company / Brand -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                        Phone / WhatsApp Number <span class="text-slate-400 font-normal">(Optional)</span>
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+91 98XXX XXXXX"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="company" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                        Company / Brand Name
+                      </label>
+                      <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        placeholder="e.g., Apex Learning Pvt. Ltd."
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Row 3: Area of Requirement & Estimated Budget -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label for="requirement" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                        Area of Requirement <span class="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="requirement"
+                        name="requirement"
+                        required
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      >
+                        <option value="">Select an area...</option>
+                        <option value="Performance Marketing - Google & Meta Ads">Performance Marketing - Google &amp; Meta Ads</option>
+                        <option value="CRM Automation & Lead Qualification">CRM Automation &amp; Lead Qualification</option>
+                        <option value="Sales Strategy & Process Digitization">Sales Strategy &amp; Process Digitization</option>
+                        <option value="Admissions / EdTech Marketing">Admissions / EdTech Marketing</option>
+                        <option value="Complete Sales & Marketing Consulting">Complete Sales &amp; Marketing Consulting</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <p id="error-requirement" class="hidden mt-1.5 text-xs font-medium text-red-600"></p>
+                    </div>
+
+                    <div>
+                      <label for="budget" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                        Estimated Project Budget
+                      </label>
+                      <select
+                        id="budget"
+                        name="budget"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      >
+                        <option value="Under ₹25,000 / $300">Under ₹25,000 / $300</option>
+                        <option value="₹25,000 – ₹75,000 / $300 – $900">₹25,000 – ₹75,000 / $300 – $900</option>
+                        <option value="₹75,000 – ₹1.5L / $900 – $1,800">₹75,000 – ₹1.5L / $900 – $1,800</option>
+                        <option value="₹1.5L+ / $1,800+">₹1.5L+ / $1,800+</option>
+                        <option value="Flexible / Let's Discuss" selected>Flexible / Let's Discuss</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Row 4: Project Details & Goals -->
+                  <div>
+                    <label for="details" class="block text-sm font-semibold text-slate-700 mb-1.5">
+                      Project Details &amp; Goals <span class="text-red-500">*</span>
+                    </label>
+                    <textarea
+                      id="details"
+                      name="details"
+                      rows="4"
+                      required
+                      placeholder="Tell me about your business, target audience, current challenges, and what results you want to achieve..."
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all resize-y"
+                    ></textarea>
+                    <p id="error-details" class="hidden mt-1.5 text-xs font-medium text-red-600"></p>
+                  </div>
+
+                  <!-- Submit CTA Button -->
+                  <div class="pt-2">
+                    <button
+                      type="submit"
+                      class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-display font-bold text-base shadow-lg shadow-blue-600/25 hover:shadow-blue-700/35 transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-blue-600/30"
+                    >
+                      <span>Submit Freelance Enquiry</span>
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Confirmation State (Hidden until valid submission) -->
+              <div id="enquiry-confirmation" class="hidden space-y-6">
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+                  <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-display font-bold text-xl text-slate-900">Enquiry Received!</h3>
+                    <p class="text-sm text-slate-600 mt-1">
+                      Thank you for reaching out to <strong class="text-slate-900">prabhatdigitalmarketing</strong> (Prabhat Kumar Singh). Your freelance enquiry has been saved and logged successfully. Expect a response within 24 hours.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Summary Card of Submitted Details -->
+                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5 space-y-3 text-sm">
+                  <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Submitted Enquiry Summary</p>
+                  <div id="confirmation-summary-content" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+                    <!-- Populated dynamically via JS -->
+                  </div>
+                </div>
+
+                <!-- Action Buttons: Copy, Open in Email, Submit Another -->
+                <div class="flex flex-wrap items-center gap-3">
+                  <button
+                    id="copy-latest-btn"
+                    type="button"
+                    class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                    </svg>
+                    Copy Enquiry
+                  </button>
+
+                  <a
+                    id="mailto-latest-btn"
+                    href="#"
+                    class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-colors"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    Open in Email Client
+                  </a>
+
+                  <button
+                    id="new-enquiry-btn"
+                    type="button"
+                    class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-300 text-slate-700 text-sm font-semibold transition-colors"
+                  >
+                    Send Another Enquiry
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- 7. FOOTER                                                             -->
+  <!-- ===================================================================== -->
+  <footer class="bg-slate-950 text-slate-400 border-t border-slate-800/80 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80">
+        <!-- Brand Info -->
+        <div class="text-center md:text-left">
+          <p class="font-display font-bold text-white text-lg">prabhatdigitalmarketing</p>
+          <p class="text-sm text-slate-400 mt-1">Prabhat Kumar Singh &bull; Sales &amp; Digital Marketing Consultant &bull; Noida / Delhi NCR &amp; Global Remote</p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <nav class="flex flex-wrap items-center justify-center gap-6 text-sm font-medium" aria-label="Footer Navigation">
+          <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+          <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+          <a href="#process" class="hover:text-white transition-colors">Process</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Bottom Row: Copyright & Discreet Demo Inbox Trigger -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+        <p>&copy; 2026 prabhatdigitalmarketing &mdash; Prabhat Kumar Singh. All rights reserved.</p>
+
+        <button
+          id="open-inbox-btn"
+          type="button"
+          class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white text-xs font-medium transition-colors"
+        >
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+          </svg>
+          <span>View Saved Enquiries (Demo Inbox)</span>
+          <span id="inbox-count-badge" class="px-2 py-0.5 rounded-full bg-blue-600 text-white text-[11px] font-bold">0</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- DEMO ENQUIRIES INBOX MODAL                                            -->
+  <!-- ===================================================================== -->
+  <div
+    id="inbox-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="inbox-modal-title"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm"
+  >
+    <div class="bg-white rounded-3xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-2xl border border-slate-200 overflow-hidden">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 bg-slate-50">
+        <div>
+          <h3 id="inbox-modal-title" class="font-display font-bold text-xl text-slate-900">
+            Saved Freelance Enquiries (Demo Inbox)
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">Stored locally in your browser so you can test and preview incoming leads.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            id="clear-all-btn"
+            type="button"
+            class="hidden px-3 py-1.5 rounded-lg text-xs font-semibold text-red-600 hover:bg-red-50 border border-red-200 transition-colors"
+          >
+            Clear All
+          </button>
+          <button
+            id="close-inbox-btn"
+            type="button"
+            aria-label="Close modal"
+            class="p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-200/70 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body: List of Enquiries -->
+      <div id="inbox-list" class="p-6 overflow-y-auto space-y-4 flex-1 bg-offwhite">
+        <!-- Populated dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- TOAST NOTIFICATION (Replaces browser alert())                         -->
+  <!-- ===================================================================== -->
+  <div
+    id="toast"
+    role="status"
+    aria-live="polite"
+    class="hidden fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-slate-900 text-white text-sm font-medium shadow-2xl border border-slate-700"
+  >
+    <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE JAVASCRIPT LOGIC                                          -->
+  <!-- ===================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      const STORAGE_KEY = 'pks_freelance_enquiries_v1';
+      let latestSubmittedEnquiry = null;
+      let clearConfirmPending = false;
+      let toastTimer = null;
+
+      // DOM References
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIconOpen = document.getElementById('menu-icon-open');
+      const menuIconClose = document.getElementById('menu-icon-close');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      const form = document.getElementById('freelance-enquiry-form');
+      const formWrapper = document.getElementById('enquiry-form-wrapper');
+      const confirmationBox = document.getElementById('enquiry-confirmation');
+      const confirmationSummaryContent = document.getElementById('confirmation-summary-content');
+      const copyLatestBtn = document.getElementById('copy-latest-btn');
+      const mailtoLatestBtn = document.getElementById('mailto-latest-btn');
+      const newEnquiryBtn = document.getElementById('new-enquiry-btn');
+
+      const openInboxBtn = document.getElementById('open-inbox-btn');
+      const closeInboxBtn = document.getElementById('close-inbox-btn');
+      const inboxModal = document.getElementById('inbox-modal');
+      const inboxList = document.getElementById('inbox-list');
+      const inboxCountBadge = document.getElementById('inbox-count-badge');
+      const clearAllBtn = document.getElementById('clear-all-btn');
+
+      const toastEl = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+
+      // ---------------------------------------------------------------------
+      // Utility: Safe LocalStorage Read / Write
+      // ---------------------------------------------------------------------
+      function getSavedEnquiries() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return [];
+          const parsed = JSON.parse(raw);
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (err) {
+          console.error('Error reading enquiries from localStorage:', err);
+          return [];
+        }
+      }
+
+      function saveEnquiries(list) {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+        } catch (err) {
+          console.error('Error saving enquiries to localStorage:', err);
+        }
+      }
+
+      // ---------------------------------------------------------------------
+      // Utility: HTML Escaping (Prevents XSS when rendering user inputs)
+      // ---------------------------------------------------------------------
+      function escapeHTML(str) {
+        const div = document.createElement('div');
+        div.textContent = str || '';
+        return div.innerHTML;
+      }
+
+      // ---------------------------------------------------------------------
+      // Utility: Toast Notification
+      // ---------------------------------------------------------------------
+      function showToast(message) {
+        toastMsg.textContent = message;
+        toastEl.classList.remove('hidden');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.add('hidden');
+        }, 3000);
+      }
+
+      // ---------------------------------------------------------------------
+      // Utility: Copy Text using document.execCommand('copy')
+      // ---------------------------------------------------------------------
+      function copyTextToClipboard(text) {
+        try {
+          const textarea = document.createElement('textarea');
+          textarea.value = text;
+          textarea.setAttribute('readonly', '');
+          textarea.style.position = 'fixed';
+          textarea.style.top = '-9999px';
+          textarea.style.left = '-9999px';
+          document.body.appendChild(textarea);
+          textarea.select();
+          textarea.setSelectionRange(0, textarea.value.length);
+          const success = document.execCommand('copy');
+          document.body.removeChild(textarea);
+          if (success) {
+            showToast('Enquiry details copied to clipboard!');
+          } else {
+            showToast('Unable to copy automatically. Please copy manually.');
+          }
+        } catch (err) {
+          console.error('Clipboard copy failed:', err);
+          showToast('Unable to copy automatically.');
+        }
+      }
+
+      // ---------------------------------------------------------------------
+      // Utility: Format Enquiry as Plain Text & Mailto Link
+      // ---------------------------------------------------------------------
+      function formatEnquiryText(entry) {
+        return [
+          'New Freelance Work Enquiry — prabhatdigitalmarketing (Prabhat Kumar Singh)',
+          '--------------------------------------------------------------------------',
+          `Date: ${entry.submittedAt}`,
+          `Full Name: ${entry.fullName}`,
+          `Email: ${entry.email}`,
+          `Phone / WhatsApp: ${entry.phone || 'Not provided'}`,
+          `Company / Brand: ${entry.company || 'Not provided'}`,
+          `Area of Requirement: ${entry.requirement}`,
+          `Estimated Budget: ${entry.budget}`,
+          '',
+          'Project Details & Goals:',
+          entry.details
+        ].join('\n');
+      }
+
+      function buildMailtoHref(entry) {
+        const subject = `[prabhatdigitalmarketing] Freelance Enquiry: ${entry.requirement} — ${entry.fullName}`;
+        const body = formatEnquiryText(entry);
+        return `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      }
+
+      // ---------------------------------------------------------------------
+      // 1. Mobile Navigation Toggle
+      // ---------------------------------------------------------------------
+      function toggleMobileMenu(forceClose) {
+        const isCurrentlyOpen = !mobileMenu.classList.contains('hidden');
+        const shouldOpen = forceClose ? false : !isCurrentlyOpen;
+
+        if (shouldOpen) {
+          mobileMenu.classList.remove('hidden');
+          menuIconOpen.classList.add('hidden');
+          menuIconClose.classList.remove('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIconOpen.classList.remove('hidden');
+          menuIconClose.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+
+      mobileMenuBtn.addEventListener('click', () => toggleMobileMenu(false));
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener('click', () => toggleMobileMenu(true));
+      });
+
+      // ---------------------------------------------------------------------
+      // 2. Form Validation & Submission
+      // ---------------------------------------------------------------------
+      function setFieldError(fieldId, message) {
+        const input = document.getElementById(fieldId);
+        const errorEl = document.getElementById(`error-${fieldId}`);
+        if (!input || !errorEl) return;
+
+        if (message) {
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+          input.classList.add('border-red-500', 'bg-red-50/30');
+          input.classList.remove('border-slate-300');
+        } else {
+          errorEl.textContent = '';
+          errorEl.classList.add('hidden');
+          input.classList.remove('border-red-500', 'bg-red-50/30');
+          input.classList.add('border-slate-300');
+        }
+      }
+
+      // Clear individual field errors as user types/changes
+      ['fullName', 'email', 'requirement', 'details'].forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.addEventListener('input', () => setFieldError(id, ''));
+          el.addEventListener('change', () => setFieldError(id, ''));
+        }
+      });
+
+      function validateForm() {
+        let isValid = true;
+        const fullName = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const requirement = document.getElementById('requirement').value.trim();
+        const details = document.getElementById('details').value.trim();
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (fullName.length < 2) {
+          setFieldError('fullName', 'Please enter your full name.');
+          isValid = false;
+        } else {
+          setFieldError('fullName', '');
+        }
+
+        if (!email || !emailPattern.test(email)) {
+          setFieldError('email', 'Please enter a valid email address.');
+          isValid = false;
+        } else {
+          setFieldError('email', '');
+        }
+
+        if (!requirement) {
+          setFieldError('requirement', 'Please select your area of requirement.');
+          isValid = false;
+        } else {
+          setFieldError('requirement', '');
+        }
+
+        if (details.length < 10) {
+          setFieldError('details', 'Please share a brief overview of your project goals (at least 10 characters).');
+          isValid = false;
+        } else {
+          setFieldError('details', '');
+        }
+
+        return isValid;
+      }
+
+      function renderConfirmation(entry) {
+        confirmationSummaryContent.innerHTML = `
+          <div>
+            <span class="block text-xs text-slate-500">Name</span>
+            <span class="font-semibold text-slate-900">${escapeHTML(entry.fullName)}</span>
+          </div>
+          <div>
+            <span class="block text-xs text-slate-500">Email</span>
+            <span class="font-semibold text-slate-900 break-all">${escapeHTML(entry.email)}</span>
+          </div>
+          <div>
+            <span class="block text-xs text-slate-500">Phone / WhatsApp</span>
+            <span class="font-medium text-slate-800">${escapeHTML(entry.phone || 'Not provided')}</span>
+          </div>
+          <div>
+            <span class="block text-xs text-slate-500">Company / Brand</span>
+            <span class="font-medium text-slate-800">${escapeHTML(entry.company || 'Not provided')}</span>
+          </div>
+          <div>
+            <span class="block text-xs text-slate-500">Area of Requirement</span>
+            <span class="font-semibold text-blue-700">${escapeHTML(entry.requirement)}</span>
+          </div>
+          <div>
+            <span class="block text-xs text-slate-500">Estimated Budget</span>
+            <span class="font-medium text-slate-800">${escapeHTML(entry.budget)}</span>
+          </div>
+          <div class="sm:col-span-2 pt-2 border-t border-slate-200">
+            <span class="block text-xs text-slate-500 mb-1">Project Details &amp; Goals</span>
+            <p class="text-slate-700 whitespace-pre-line leading-relaxed">${escapeHTML(entry.details)}</p>
+          </div>
+        `;
+
+        mailtoLatestBtn.setAttribute('href', buildMailtoHref(entry));
+        formWrapper.classList.add('hidden');
+        confirmationBox.classList.remove('hidden');
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!validateForm()) {
+          showToast('Please check the highlighted fields.');
+          return;
+        }
+
+        const entry = {
+          id: 'ENQ-' + Date.now(),
+          submittedAt: new Date().toLocaleString('en-IN', {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          }),
+          fullName: document.getElementById('fullName').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          phone: document.getElementById('phone').value.trim(),
+          company: document.getElementById('company').value.trim(),
+          requirement: document.getElementById('requirement').value.trim(),
+          budget: document.getElementById('budget').value.trim(),
+          details: document.getElementById('details').value.trim()
+        };
+
+        const enquiries = getSavedEnquiries();
+        enquiries.unshift(entry);
+        saveEnquiries(enquiries);
+
+        latestSubmittedEnquiry = entry;
+        updateInboxBadge();
+        renderConfirmation(entry);
+        showToast('Freelance enquiry submitted successfully!');
+      });
+
+      copyLatestBtn.addEventListener('click', () => {
+        if (latestSubmittedEnquiry) {
+          copyTextToClipboard(formatEnquiryText(latestSubmittedEnquiry));
+        }
+      });
+
+      newEnquiryBtn.addEventListener('click', () => {
+        form.reset();
+        confirmationBox.classList.add('hidden');
+        formWrapper.classList.remove('hidden');
+      });
+
+      // ---------------------------------------------------------------------
+      // 3. Demo Enquiries Inbox Modal
+      // ---------------------------------------------------------------------
+      function updateInboxBadge() {
+        const count = getSavedEnquiries().length;
+        inboxCountBadge.textContent = String(count);
+      }
+
+      function renderInboxModal() {
+        const enquiries = getSavedEnquiries();
+        clearConfirmPending = false;
+        clearAllBtn.textContent = 'Clear All';
+
+        if (enquiries.length === 0) {
+          clearAllBtn.classList.add('hidden');
+          inboxList.innerHTML = `
+            <div class="text-center py-12 px-4">
+              <div class="w-14 h-14 rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-4">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                </svg>
+              </div>
+              <p class="font-display font-bold text-slate-900 text-base">No saved enquiries yet</p>
+              <p class="text-sm text-slate-500 mt-1 max-w-sm mx-auto">
+                Submit the Freelance Work Enquiry form on the page to test and preview how incoming client leads appear here.
+              </p>
+            </div>
+          `;
+          return;
+        }
+
+        clearAllBtn.classList.remove('hidden');
+        inboxList.innerHTML = enquiries.map((entry) => `
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3" data-id="${escapeHTML(entry.id)}">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base">
+                  ${escapeHTML(entry.fullName)}
+                  ${entry.company ? `<span class="text-slate-400 font-normal"> &bull; ${escapeHTML(entry.company)}</span>` : ''}
+                </h4>
+                <p class="text-xs text-slate-500 mt-0.5">
+                  ${escapeHTML(entry.email)}${entry.phone ? ` &bull; ${escapeHTML(entry.phone)}` : ''}
+                </p>
+              </div>
+              <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                ${escapeHTML(entry.submittedAt)}
+              </span>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
+                ${escapeHTML(entry.requirement)}
+              </span>
+              <span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 text-xs font-semibold">
+                Budget: ${escapeHTML(entry.budget)}
+              </span>
+            </div>
+
+            <p class="text-sm text-slate-700 whitespace-pre-line leading-relaxed bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+              ${escapeHTML(entry.details)}
+            </p>
+
+            <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  data-action="copy"
+                  data-id="${escapeHTML(entry.id)}"
+                  class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold transition-colors"
+                >
+                  Copy Enquiry
+                </button>
+                <a
+                  href="${buildMailtoHref(entry)}"
+                  class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold transition-colors"
+                >
+                  Open in Email
+                </a>
+              </div>
+              <button
+                type="button"
+                data-action="delete"
+                data-id="${escapeHTML(entry.id)}"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold text-red-600 hover:bg-red-50 transition-colors"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Delegated events inside Inbox List
+      inboxList.addEventListener('click', (event) => {
+        const btn = event.target.closest('button[data-action]');
+        if (!btn) return;
+
+        const action = btn.getAttribute('data-action');
+        const id = btn.getAttribute('data-id');
+        const enquiries = getSavedEnquiries();
+
+        if (action === 'copy') {
+          const found = enquiries.find((item) => item.id === id);
+          if (found) copyTextToClipboard(formatEnquiryText(found));
+        } else if (action === 'delete') {
+          const updated = enquiries.filter((item) => item.id !== id);
+          saveEnquiries(updated);
+          updateInboxBadge();
+          renderInboxModal();
+          showToast('Enquiry deleted from Demo Inbox.');
+        }
+      });
+
+      // Two-step Clear All (avoids native confirm())
+      clearAllBtn.addEventListener('click', () => {
+        if (!clearConfirmPending) {
+          clearConfirmPending = true;
+          clearAllBtn.textContent = 'Click again to confirm';
+          return;
+        }
+        saveEnquiries([]);
+        updateInboxBadge();
+        renderInboxModal();
+        showToast('All saved enquiries cleared.');
+      });
+
+      function openInbox() {
+        renderInboxModal();
+        inboxModal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeInbox() {
+        inboxModal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      openInboxBtn.addEventListener('click', openInbox);
+      closeInboxBtn.addEventListener('click', closeInbox);
+
+      // Close modal on backdrop click or Escape key
+      inboxModal.addEventListener('click', (event) => {
+        if (event.target === inboxModal) closeInbox();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !inboxModal.classList.contains('hidden')) {
+          closeInbox();
+        }
+      });
+
+      // Initialize badge on load
+      updateInboxBadge();
+    })();
+  </script>
+</body>
+</html>
